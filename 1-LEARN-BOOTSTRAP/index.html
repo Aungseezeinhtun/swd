@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- bootstrap-icon  -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            height: 10000px;
+        }
+
+        .slide-img {
+            height: 300px;
+             object-fit: contain;
+             object-position: top; 
+        }
+    </style>
+    
+</head>
+
+<body class="p-4">
+
+    <!-- NavBar  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./image/download.3.jpg" alt="" height="30" class="rounded-3"> Hello
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Disabled</a>
+              </li>
+            </ul>
+
+            <div class="">
+                <a href="#" class="btn btn-outline-light"> Sign In </a>
+                <a href="#" class="btn btn-light"> Sign Up </a>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+      <br> <br> <br>
+
+    <h1>MinGalar par</h1>
+    <div class="p-3 bg-primary fixed-top"></div>
+    <div class="p-4 bg-black sticky-top top-0"></div>
+
+    <div class="p-3 bg-info position-fixed" style="z-index: 10; bottom: 50px;right: 50px"></div>
+
+    <div class="bg-info shadow mx-auto py-5 w-25 my-3"> </div>
+    <div class="bg-info shadow-none mx-auto py-5 w-25 my-3"> </div>
+    <div class="bg-info shadow-sm mx-auto py-5 w-25 my-3"> </div>
+    <div class="bg-info shadow-lg mx-auto py-5 w-25 my-3"> </div>
+
+    <hr />
+
+    <!-- manual write top bottom   -->
+     <button class="btn btn-lg btn-primary position-relative me-5"> Click Me <span class="badge bg-danger position-absolute rounded-pill" style="top: -10px; left: 100px;">15</span></button>
+
+    <!-- bootstrap  -->
+
+    <button class="btn btn-lg btn-primary position-relative"> Click Me <span class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">15</span></button>
+
+    <hr>
+
+
+    <div class="bg-white border border-3 mx-auto  w-25 my-3 overflow-scroll p-3" style="height: 200px">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolore obcaecati ut est alias voluptatum optio quibusdam quam! Aliquam, reprehenderit maxime eum neque ullam consectetur nam odio repellat hic officia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aut enim, sequi obcaecati, recusandae itaque error culpa ea rerum, nisi fuga necessitatibus labore incidunt ab reiciendis sint nostrum molestiae cupiditate.
+        </p>
+     </div>
+
+     <div class="images">
+        <img src="./image/harlarysoe1.jpg" alt="" class="w-25 opacity-25">
+        <img src="./image/harlarysoe1.jpg" alt="" class="w-25 opacity-50">
+        <img src="./image/harlarysoe1.jpg" alt="" class="w-25 opacity-75">
+     </div>
+
+     <hr>
+    <div class=" d-flex flex-column-reverse justify-content-between align-items-start border border-3 border-primary p-3 m-3" style="height: 400px">
+
+        <div class="p-5 bg-primary d-inline-block"></div>
+        <div class="p-5 bg-secondary d-block "></div>
+        <div class="p-5 bg-info "></div>
+    </div>
+    <hr>
+
+    <div class="border border-3 border-primary m-3 p-3">
+        <img src="./image/harlarysoe1.jpg" alt="" class="w-25 mb-3 ms-3 float-end">
+
+        <p class="mb-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam temporibus mollitia iusto odit earum! Quis quam deserunt, laboriosam, eaque alias doloremque molestias a numquam cumque, quae ipsam totam quos?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat sed ut accusantium, incidunt officiis ad tempora ducimus eum quia in quasi ipsa autem aliquid repellendus quis assumenda, quisquam tempore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod nulla voluptate incidunt sit aliquid eum commodi cupiditate natus dolor, quidem, possimus ullam! Laborum perferendis fugiat dolorem, quidem nostrum assumenda.
+            
+        </p>
+        <div class="clearfix"></div>
+        <h2>Hello hello</h2>
+
+        <!-- <div class="clearfix"></div> -->
+    </div>
+
+    <div class="">
+        <p class="text-center fs-1">Mingalar par</p>
+        <p class="text-center fs-5">Mingalar par</p>
+        <p class="text-center fs-3">Mingalar par</p>
+
+       
+        
+    </div>
+
+    <div class="m-3">
+        <p class="fw-bold lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reprehenderit ut ipsa at eligendi laudantium, quibusdam, unde dolores natus adipisci vel maiores dignissimos sed, modi veritatis itaque! Culpa, cum eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, accusamus amet eum earum voluptatum consectetur. Saepe, doloribus modi. Tempore sed molestiae expedita quia, quisquam in placeat quis voluptatem rerum quos?</p>
+
+        <p class="fw-bolder">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reprehenderit ut ipsa at eligendi laudantium, quibusdam, unde dolores natus adipisci vel maiores dignissimos sed, modi veritatis itaque! Culpa, cum eveniet!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reprehenderit ut ipsa at eligendi laudantium, quibusdam, unde dolores natus adipisci vel maiores dignissimos sed, modi veritatis itaque! Culpa, cum eveniet!</p>
+    </div>
+
+    <div class="border border-2 border-primary w-25 m-3 p-3 text-break"> Lorem ipsum dolor sit amet consecteturfdsafdsafdsafdsadsafdsafdsafdsafdsafdsaf adipisicing elit. Error, iusto.</div>
+
+    <div class="badge bg-primary text-wrap" style="width: 6rem">
+        This text should wrap.
+    </div>
+
+    <hr />
+
+    <!-- btn small  -->
+    <button class="btn btn-sm btn-primary">Click</button>
+    <button class="btn btn-sm  btn-outline-secondary">Click</button>
+    <button class="btn btn-sm  btn-danger">Click</button>
+    <button class="btn btn-sm  btn-outline-info">Click</button>
+
+    <br /> <br>    
+
+    <!-- btn normal  -->
+    <button class="btn btn-primary">Click</button>
+    <button class="btn btn-outline-secondary">Click</button>
+    <button class="btn btn-danger">Click</button>
+    <button class="btn btn-outline-info">Click</button>
+
+    <br /> <br>  
+ 
+    <!-- btn lg   -->
+    <button class="btn btn-lg  btn-primary">Click</button>
+    <button class="btn btn-lg   btn-outline-secondary">Click</button>
+    <button class="btn btn-lg   btn-danger">Click</button>
+        <button class="btn  btn-lg  btn-outline-info">Click</button>
+    
+    <hr />
+
+    <!-- button-group && fontawesome icon -->
+    <div class="btn-group">
+        <button class="btn btn-primary active">
+            <i class="fa-solid fa-home fa-fw"></i>
+        </button>
+        <button class="btn btn-primary">
+            <i class="fa-solid fa-trash fa-fw"></i>
+        </button>
+        <button class="btn btn-primary">
+            <i class="fa-solid fa-pencil fa-fw"></i>
+        </button>
+    </div>
+
+    <!-- btn-group && bootstrap-icons  -->
+    <div class="btn-group">
+        <button class="btn btn-outline-primary active"> <i class="bi bi-house fa-fw"></i> </button>
+        <button class="btn btn-outline-primary"> <i class="bi bi-trash3 fa-fw"></i> </button>
+        <button class="btn btn-outline-primary"> <i class="bi bi-pencil fa-fw"></i> </button>
+    </div>
+
+    <hr />
+
+    <!-- Alert testing  -->
+    <div class="alert alert-danger alert-dismissible ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore numquam aut nobis nihil molestiae, ullam inventore earum soluta! Doloremque, harum.</p>
+
+        <button class="btn-close " data-bs-dismiss="alert"></button>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore numquam aut nobis nihil molestiae, ullam inventore earum soluta! Doloremque, harum.</p>
+
+        <button class="btn-close " data-bs-dismiss="alert"></button>
+    </div>
+
+    <hr />
+
+    <!-- Badge  -->
+    <h1>Example Heading <span class="badge bg-secondary">New</span></h1>
+
+    <p class="">Hello My Sabai <span class="badge bg-warning">Hi</span></p>
+
+    <button type="button" class="btn btn-primary position-relative me-5">
+        Inbox
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+
+      <button type="button" class="btn btn-primary position-relative">
+        Profile
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+          <span class="visually-hidden">New alerts</span>
+        </span>
+      </button>
+
+      <hr />
+
+      <!-- Breadcrump  -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="" class="">Home</a></li>
+        <li class="breadcrumb-item"><a href="" class="">User</a></li>
+        <li class="breadcrumb-item active">JavaScript</li>
+      </ol>
+        
+      <!-- breadcrumb divider  -->
+      <nav style="--bs-breadcrumb-divider: '*';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </nav>
+
+
+      <hr />
+
+      <!-- list-group  -->
+      <h4>List UI</h4>
+
+      <ul class="list-group mb-3 list-group-flush list-group-numbered">
+        <li class="list-group-item active">Apple</li>
+        <li class="list-group-item">Apple</li>
+        <li class="list-group-item">Apple</li>
+        <li class="list-group-item disabled">Apple</li>
+      </ul>
+
+      <div class="list-group mb-3">
+        <a href="" class="list-group-item list-group-item-action active d-flex justify-content-between">Apple
+           <div>
+            <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+            <button class="btn btn-sm btn-danger"><i class="bi bi-pencil"></i></button>
+           </div>
+            
+        </a>
+        <a href="" class="list-group-item list-group-item-action">Apple</a>
+        <a href="" class="list-group-item list-group-item-action disabled">Apple</a>
+      </div>
+
+      <div class="list-group ">
+
+        <li class="list-group-item d-flex d-flex align-items-start justify-content-between list-group-item-danger">
+            <div class="">
+                <h3 class="">This is title</h3>
+                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, maxime. Est corrupti quisquam maxime magnam?</p>
+            </div>
+            <span class="badge bg-primary">30</span>
+        </li>
+
+        <li class="list-group-item d-flex align-items-start justify-content-between list-group-item-danger">
+            <div class="">
+                <h3 class="">This is title</h3>
+                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, maxime. Est corrupti quisquam maxime magnam?</p>
+            </div>
+            <span class="badge bg-primary">30</span>
+        </li>
+
+        <li class="list-group-item d-flex align-items-start justify-content-between list-group-item-danger">
+            <div class="">
+                <h3 class="">This is title</h3>
+                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, maxime. Est corrupti quisquam maxime magnam?</p>
+            </div>
+            <span class="badge bg-primary">30</span>
+        </li>
+
+      </div>
+
+      <hr />
+
+      <!-- paganitation  -->
+      <h3>Paganation</h3>
+
+      <ul class="pagination">
+        <li class="page-item"><a href="" class="page-link disabled"> <i class="bi bi-arrow-left"></i> </a></li>
+        <li class="page-item"><a href="" class="page-link active">1</a></li>
+        <li class="page-item"><a href="" class="page-link">2</a></li>
+        <li class="page-item"><a href="" class="page-link">3</a></li>
+        <li class="page-item"><a href="" class="page-link">4</a></li>
+        <li class="page-item"><a href="" class="page-link"> <i class="bi bi-arrow-right"></i> </a></li>
+      </ul>
+
+      <hr />
+
+      <!-- Progress  -->
+      <h4>Progress</h4>
+
+      <div class="progress" style="height: 10px">
+        <div class="progress-bar w-25 bg-warning progress-bar-striped">25%</div>
+        
+      </div>
+      <br>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style ="width: 80%"> 80%</div>
+      </div>
+      <br>
+      <div class="progress">
+        <div class="progress-bar bg-danger" style ="width: 80%"> 80 %</div>
+      </div>
+
+      <!-- spinner  -->
+      <br>
+      <div class="spinner-border text-primary"></div>
+      <div class="spinner-grow text-danger"></div>
+      <div class="spinner-border spinner-border-sm text-primary"></div>
+      <div class="spinner-grow spinner-grow-sm text-danger"></div>
+      <div class="spinner-border " style="width: 100px; height: 100px"></div>
+      <div class="spinner-border " style="width: 10px; height: 10px"></div>
+
+      <br>
+      <br>
+
+      <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm text-danger"></span>
+        Loading
+      </button>
+
+      <button class="btn btn-primary">
+        <span class="spinner-grow spinner-grow-sm text-danger"></span>
+        Loading
+      </button>
+
+      <hr />
+
+      <h4> MOdal UI</h4>
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade " data-bs-backdrop="static"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"> LOve Sabai</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, culpa. Possimus, delectus enim quae quisquam labore ducimus tempora accusantium, illum nihil ab unde corrupti asperiores dolorum. Doloribus accusamus perspiciatis consequuntur!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ut quo saepe, id est aut ducimus quam quos rem rerum laboriosam minus facilis animi, totam illo distinctio earum autem! Velit, animi! Est ad, similique deserunt adipisci aut ducimus nisi nesciunt voluptatibus beatae dolorum praesentium facilis optio odio dolor. Vero, iusto.
+
+          <img src="./image/harlarysoe1.jpg" alt="" class="w-100">
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <h4> Offcanvas</h4>
+  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    Button with data-bs-target
+  </button>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <h4> Carousel</h4>
+
+  <div id="cc" class="carousel carousel-fade slide bg-black" data-bs-ride="carousel">
+
+    <!-- Indicatiors button  -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#cc" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#cc" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#cc" data-bs-slide-to="2" class="active" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#cc" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+
+    <div class="carousel-inner">
+      <div class="carousel-item ">
+        <img src="./image/download (1).jpg" class=" slide-img d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./image/download.jpg" class=" slide-img d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img src="./image/harlarysoe1.jpg" class=" slide-img d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./image/download.3.jpg" alt="" class="slide-img d-block w-100">
+      </div>
+    </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#cc" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#cc" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    
+  </div>
+
+  <div class="d-flex justify-content-center my-3">
+  <button class="btn btn-outline-primary" data-bs-target="#cc" data-bs-slide="prev"> <i class="bi bi-arrow-left"></i></button>
+
+    <button class="btn btn-outline-primary" data-bs-target="#cc" data-bs-slide="next"> <i class="bi bi-arrow-right"></i></button>
+
+    <div class="btn btn-outline-primary"> <i class="bi bi-0-circle" data-bs-slide-to="2" data-bs-target="#cc" ></i></div>
+  </div>
+
+  <hr />
+
+  <!-- manual text slide carousel  -->
+  <div class="carousel slide carousel-fade" id="dd">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="">
+                <div class="p-3 bg-primary ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos laudantium distinctio voluptas beatae corporis harum ipsum veritatis molestias facilis illum accusamus rerum, dolores, quo, magni incidunt doloremque deserunt laborum saepe?
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="">
+                <div class="p-3 bg-info">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos laudantium distinctio voluptas beatae corporis harum ipsum veritatis molestias facilis illum accusamus rerum, dolores, quo, magni incidunt doloremque deserunt laborum saepe?
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="">
+                <div class="p-3 bg-warning">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos laudantium distinctio voluptas beatae corporis harum ipsum veritatis molestias facilis illum accusamus rerum, dolores, quo, magni incidunt doloremque deserunt laborum saepe?
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center my-3">
+    <button class="btn btn-outline-primary" data-bs-target="#dd" data-bs-slide="prev"> <i class="bi bi-arrow-left"></i></button>
+  
+      <button class="btn btn-outline-primary" data-bs-target="#dd" data-bs-slide="next"> <i class="bi bi-arrow-right"></i></button>
+  
+     
+    </div>
+
+    <hr />
+
+    <!-- Table testing  -->
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+          <tr class="table-primary">
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <!-- Accordiation  -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseFour">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <hr>
+
+      <!-- Dropdown  -->
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Show Menu</button>
+        <ul class="dropdown-menu">
+            <li class="">
+                <a href="" class="dropdown-item">Menu 1</a>
+                <a href="" class="dropdown-item">Menu 2</a>
+                <a href="" class="dropdown-item">Menu 3</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="dropdown mt-3">
+        <i class="bi bi-info-circle" data-bs-toggle="dropdown"></i>
+        <ul class="dropdown-menu">
+            <li class="">
+                <a href="" class="dropdown-item">Menu 1</a>
+                <a href="" class="dropdown-item">Menu 2</a>
+                <li><hr class="dropdown-divider"></li>
+                <a href="" class="dropdown-item">Menu 3</a>
+            </li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <!-- Card  -->
+      <div class="card w-25 mb-2">
+        <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur ex, blanditiis culpa voluptas consectetur.
+            </p>
+        </div>
+      </div>
+      <div class="card w-25 mb-2">
+        <div class="card-body text-center">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur ex, blanditiis culpa voluptas consectetur.
+            </p>
+        </div>
+      </div>
+
+      <div class="card w-25 mb-2">
+        <div class="card-body text-end">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur ex, blanditiis culpa voluptas consectetur.
+            </p>
+        </div>
+      </div>
+      <div class="card w-25 mb-2">
+        <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur ex, blanditiis culpa voluptas consectetur.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Show Menu</button>
+                    <ul class="dropdown-menu">
+                        <li class="">
+                            <a href="" class="dropdown-item">Menu 1</a>
+                            <a href="" class="dropdown-item">Menu 2</a>
+                            <a href="" class="dropdown-item">Menu 3</a>
+                        </li>
+                    </ul>
+                  </div>
+    
+                  <div class="dropdown ">
+                    <i class="bi bi-info-circle" data-bs-toggle="dropdown"></i>
+                    <ul class="dropdown-menu">
+                        <li class="">
+                            <a href="" class="dropdown-item">Menu 1</a>
+                            <a href="" class="dropdown-item">Menu 2</a>
+                            <li><hr class="dropdown-divider"></li>
+                            <a href="" class="dropdown-item">Menu 3</a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="card w-25 mb-2">
+        <h4 class="card-header">Header</h4>
+        <div class="card-body text-center">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur ex, blanditiis culpa voluptas consectetur.
+            </p>
+        </div>
+        <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-primary dropdown-toggle" data-bs-toggle="dropdown">Show Menu</button>
+                    <ul class="dropdown-menu">
+                        <li class="">
+                            <a href="" class="dropdown-item">Menu 1</a>
+                            <a href="" class="dropdown-item">Menu 2</a>
+                            <a href="" class="dropdown-item">Menu 3</a>
+                        </li>
+                    </ul>
+                  </div>
+    
+                  <div class="dropdown ">
+                    <i class="bi  bi-info-circle " data-bs-toggle="dropdown"></i>
+                    <ul class="dropdown-menu">
+                        <li class="">
+                            <a href="" class="dropdown-item">Menu 1</a>
+                            <a href="" class="dropdown-item">Menu 2</a>
+                            <li><hr class="dropdown-divider"></li>
+                            <a href="" class="dropdown-item">Menu 3</a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 w-25">
+        <img src="./image/download.3.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt animi excepturi minima voluptate aliquid.
+            </p>
+        </div>
+      </div>
+
+      <div class="card mb-3 w-25">
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt animi excepturi minima voluptate aliquid.
+            </p>
+        </div>
+        <img src="./image/download.3.jpg" alt="" class="card-img-bottom">
+
+      </div>
+
+      <!-- imgae overlay  -->
+      <div class="card text-bg-dark w-25">
+        <img src="./image/download.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay text-warning">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+
+      
+
+
+
+  
+      
+
+
+
+      
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
